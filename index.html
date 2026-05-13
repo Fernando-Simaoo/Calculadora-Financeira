@@ -10,9 +10,33 @@
   <title>Calculadora Financeira</title>
 </head>
 <body>
+    <main class="conteiner-calculador">
+        <div class="visor">
+            <h1 class="resultado" id="tela">calculadora financeira</h1>
 
+        </div>
+        <div class="conteiner_teclado">
+            <button class="btn" id="7" onclick="inserir('7')">7</button>
+            <button class="btn" id="8" onclick="inserir('8')">8</button>
+            <button class="btn" id="9" onclick="inserir('9')">9</button>
+            <button class="btn" id="divisao" onclick="inserir('divisao')">/</button>
+            <button class="btn" id="4" onclick="inserir('4')">4</button>
+            <button class="btn" id="5" onclick="inserir('5')">5</button>
+            <button class="btn" id="6" onclick="inserir('6')">6</button>
+            <button class="btn" id="multiplicacao" onclick="inserir('multiplicacao')">*</button>
+            <button class="btn" id="1" onclick="inserir('1')">1</button>
+            <button class="btn" id="2" onclick="inserir('2')">2</button>
+            <button class="btn" id="3" onclick="inserir('3')">3</button>
+            <button class="btn" id="subtracao" onclick="inserir('subtracao')">-</button>
+            <button class="btn" id="0" onclick="inserir('0')">0</button>
+            <button class="btn" id="ponto" onclick="inserir('ponto')">.</button>
+            <button class="btn" id="igual" onclick="calcular()">=</button>
+            <button class="btn" id="soma" onclick="inserir('soma')">+</button>
+            <button class="btn" id="backspace" onclick="backspace()">&lt;</button>
+            <button class="btn" id="clear" onclick="limpar()">C</button>
+        </div>
 
-
+    </main>
     <script src="index.js"></script>
 </body>
 
