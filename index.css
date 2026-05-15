@@ -1,41 +1,109 @@
 * {
     box-sizing: border-box;
-}
-
-html,
-body {
-    width: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: blue;
-    padding: 1.25rem;
-    min-height: 100vh;
-}
-
-.conteiner-calculador {
-    background-color: #222222;
-    padding: 1.25rem;
-    border-radius: 0.3125rem;
-    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
-    max-width: 70rem;
-    margin: auto;
-}
-
-.visor {
-    display:flex;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    background-color: #97c98f;
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+.container {
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 6px;
+    padding: 2rem;
     width: 100%;
-    height: 3.125rem;
-    font-size: 0.5rem;
-    text-align: left;
-    padding: 0.625rem;
-    margin-bottom: 1.25rem;
-    border: 0.0625rem solid #ccc;
-    border-radius: 0.3125rem;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #24292e;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #586069;
+}
+
+input {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #d1d5da;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: #0366d6;
+    box-shadow: 0 0 0 3px rgba(3, 102, 214, 0.3);
+}
+
+.actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+button {
+    flex: 1;
+    padding: 0.6rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-primario {
+    background-color: #0366d6;
+    color: white;
+}
+
+.btn-primario:hover {
+    background-color: #005cc5;
+}
+
+.btn-secundario {
+    background-color: #fafbfc;
+    border: 1px solid #d1d5da;
+    color: #24292e;
+}
+
+.btn-secundario:hover {
+    background-color: #f3f4f6;
+}
+
+.resultado-container {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #e1e4e8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#resultado {
+    font-size: 1.25rem;
+    color: #0366d6;
 }
